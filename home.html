@@ -1,0 +1,454 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      
+        StartUp &middot; 
+      
+    </title>
+
+    
+      <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
+      <link href="assets/css/toolkit-startup.css" rel="stylesheet">
+      <link href="assets/css/application-startup.css" rel="stylesheet">
+    
+
+    
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+        #stage {
+          height: 1px;
+          overflow: auto;
+          min-height: 100vh;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+    </style>
+  </head>
+
+
+<body>
+  
+
+
+
+<div class="stage-shelf stage-shelf-right hidden" id="sidebar">
+  <ul class="nav nav-bordered nav-stacked flex-column">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#market-making">Market Making</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#OTC">OTC</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#team">Team</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+  </ul>
+</div>
+
+<div class="stage" id="stage">
+
+<div class="block block-inverse block-fill-height app-header" style="background-color:white">
+
+  <div class="container py-4 app-navbar">
+    <nav class="navbar navbar-padded navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand mr-auto" href="">
+        <strong padding: 12px; border-radius: 4px; color: #28669F;">Koinbros.</strong>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-target="#stage"
+        data-toggle="stage"
+        data-distance="-250">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="d-none d-md-block text-uppercase" style="color:black">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#market-making">Market Making</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#OTC">OTC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+</div>
+
+  <img class="app-graph"  src="assets/img/startup-0.svg">
+
+  <div class="block-xs-middle pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-lg-6">
+          <h1 class="block-titleData frequency display-1" style="color:black"> <strong> Liquidity on demand. </strong></h1>
+          <p class="lead mb-4" style="color:black">Koinbros specialises in market-making services and over-the-counter trading on post-ICO utility tokens.</p>
+          <button class="btn btn-primary btn-lg">Contact us now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="about" class="block block-secondary">
+  <div class="container">
+    <div class="row app-align-center">
+      <div class="col-md-8 offset-md-2 col-sm-12">
+        <h6 class="text-muted text-uppercase">About us</h6>
+        <h2>Koinbros is a leading global provider of post-ICO services to cryptocurrency and blockchain projects.</h2>
+        <p class="lead mb-4">
+          We offer over-the-counter trading solutions to ICO projects looking to convert cryptocurrency raised via ICO to fiat currency that can be used to build out projects.
+           We also offer market-making services to these projects as a way to create liquidity for their tokens.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="block block-inverse block-secondary app-code-block">
+  <div class="container">
+    <div class="row app-align-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h6 class="text-muted text-uppercase">Easy development</h6>
+        <h2>Natural language queries make mining data easy for anyone.</h2>
+        <p class="lead mb-4 text-muted">Rather than force everyone at your company to learn incredibly difficult terminal commands, we allow anyone to query the data with natural language to return data.</p>
+        <button class="btn btn-secondary btn-lg btn-borderless">
+          Read our docs
+        </button>
+      </div>
+      <div class="col-md-5 ml-auto order-1 order-md-2">
+        <pre class="app-code">
+<span>1</span> <span>goAnalytics</span> “who are the latest 3 users?”
+<span>2</span>
+<span>3</span>  {
+<span>4</span>    "Dave": {
+<span>5</span>      "fullName": "Dave Gamache",
+<span>6</span>      "twitterHandle": "@dhg",
+<span>7</span>    }
+<span>8</span>    "Mark": {
+<span>9</span>      "fullName": "Mark Otto",
+<span>10</span>      "twitterHandle": "@mdo",
+<span>11</span>    }
+<span>12</span>    "Jacob": {
+<span>13</span>      "fullName": "Jacob Thornton",
+<span>14</span>      "twitterHandle": "@fat",
+<span>15</span>    }
+<span>16</span>  }</pre>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- 
+<div class="block block-inverse app-high-praise"
+     style="background-image: url(assets/img/startup-3.jpg);">
+    <div class="container">
+      <div class="row app-align-center py-3 justify-content-end">
+        <div class="col-sm-7 col-md-5 py-5">
+          <h6 class="text-muted text-uppercase mb-2">High Praise</h6>
+          <h2 class="mb-4">“Go Analytics is amazing. Decisions that used to take weeks, now only takes minutes and is available to everyone on my team.”</h2>
+          <p class="mb-4 text-muted">Cindy Smith, founder of Cool Startup</p>
+        </div>
+      </div>
+  </div>
+</div> -->
+
+<div id="market-making" class="block block-secondary app-block-marketing-grid">
+  <div class="container text-xs-center">
+    <div class="row">
+      <div class="col-sm-12 col-lg-6 my-auto">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-12">
+            <!-- <h6 class="text-muted text-uppercase mb-2">Inside the machine</h6> -->
+            <h2 class="display-3">Market Making</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <div class="row app-marketing-grid">
+          <div class="col-md-6 px-4 mb-5">
+            <span class="icon icon-gauge" style="font-size: 8em; color:#007bff;"></span>
+            <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
+          </div>
+          <div class="col-md-6 px-4 mb-5">
+            <span class="icon icon-line-graph" style="font-size: 8em; color:#007bff;"></span>
+            <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
+          </div>
+        </div>
+        <div class="row app-marketing-grid">
+          <div class="col-md-6 px-4 mb-5">
+            <span class="icon icon-network" style="font-size: 8em; color:#007bff;"></span>
+            <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
+          </div>
+          <div class="col-md-6 px-4 mb-5">
+            <span class="icon icon-chat" style="font-size: 8em; color:#007bff;"></span>
+            <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="block app-ribbon py-5">
+  <div class="container text-center">
+    <div class="row">
+        <div class="col-md-3 col-6">
+            <img style="max-width: 10em"  class="img-responsive" src="assets/img/binance-logo.svg">
+        </div>
+        <div class="col-md-3 col-6">
+            <img style="max-width: 10em"  class="img-responsive" src="assets/img/bitfinex_logo.svg">
+        </div>
+        <div class="col-md-3 col-6">
+            <img style="max-width: 10em"  class="img-responsive" src="assets/img/coin-ex-logo.svg">
+        </div>
+        <div class="col-md-3 col-6">
+            <img  style="max-width: 10em"  class="img-responsive" src="assets/img/idex_logo.svg">
+        </div>
+    </div>
+    <small style="color:white"> + All other major exchanges. </small>
+  </div>
+</div>
+<div id="OTC" class="block block-secondary app-block-marketing-grid">
+    <div class="container text-xs-center">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6">
+          <div class="row app-marketing-grid">
+            <div class="col-md-6 px-4 mb-5">
+              <span class="icon icon-user" style="font-size: 8em; color:#007bff;"></span>
+              <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
+            </div>
+            <div class="col-md-6 px-4 mb-5">
+              <span class="icon icon-swap" style="font-size: 8em; color:#007bff;"></span>
+              <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
+            </div>
+          </div>
+          <div class="row app-marketing-grid">
+            <div class="col-md-6 px-4 mb-5">
+              <span class="icon icon-credit" style="font-size: 8em; color:#007bff;"></span>
+              <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
+            </div>
+            <div class="col-md-6 px-4 mb-5">
+              <span class="icon icon-stopwatch" style="font-size: 8em; color:#007bff;"></span>
+              <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6 my-auto">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-12">
+              <!-- <h6 class="text-muted text-uppercase mb-2">Inside the machine</h6> -->
+              <h2 class="display-3">OTC <br/>Services</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+.profile-img {
+  max-width: 10em;
+  border-radius: 5em;
+}
+.profile-card {
+  border-radius: 0.5em;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.profile-card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.profile-card-text {
+  line-height: 2em;
+}
+.icon-linkedin {
+  color: #006cac;
+}
+</style>
+<div id="team" class="block block-secondary app-block-marketing-grid">
+  <div class="container text-xs-center">
+    <div class="row mb-5 justify-content-center">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <h2 class="mb-4 display-3">Team</h2>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-12 mb-5">
+        <div class="card profile-card p-2">
+          <div class="row">
+            <div class="col-4">
+                <img class="card-img-top profile-img mx-auto img-fluid" src="assets/img/gavin-pic.jpg" alt="">
+                <p class="mt-4" style="font-size: 1.5em;"> <a target="_blank" href="https://www.linkedin.com/in/gavin-yeung-3a32141/"><span class="icon icon-linkedin"></span></a></p>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h4 class="card-title text-left">CEO, Founder</h4>
+                <p class="card-text profile-card-text text-left">
+                    Experienced portfolio manager, first venture was installing wireless cards for college students. 
+                    MBA Chicago Booth, CS degree from UCLA, founding member of Bitcoin Association of HK.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 mb-5 mt-5">
+        <div class="card profile-card p-2">
+          <div class="row">
+            <div class="col-8">
+              <div class="card-body">
+                <h4 class="card-title text-left">COO, Co-Founder</h4>
+                <p class="card-text profile-card-text text-left">
+                    Worked as a trader & quantitative analyst in a bulge bracket investment bank. 
+                    He also worked as a data analyst for an analytics firm before joining the bank. 
+                    B.Tech-M.Tech from IIT Kanpur.
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+                <img class="card-img-top profile-img mx-auto img-fluid" src="assets/img/neelabh_pic.jpg" alt="">
+                <p class="mt-4" style="font-size: 1.5em;"> <a target="_blank" href="https://www.linkedin.com/in/neelabh-dixit-6a16245/"><span class="icon icon-linkedin"></span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 mb-5">
+      <div class="card profile-card p-2">
+        <div class="row">
+          <div class="col-4">
+              <img class="card-img-top profile-img mx-auto img-fluid" src="assets/img/pradosh-pic.jpeg" alt="">
+              <p class="mt-4" style="font-size: 1.5em;"> <a target="_blank" href="https://www.linkedin.com/in/pradoshbiswas/"><span class="icon icon-linkedin"></span></a></p>
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h4 class="card-title text-left">Chief Risk Officer</h4>
+              <p class="card-text profile-card-text text-left">
+                  8 yrs as an Asian equities trader/analyst and 4 years as an equity research associate . 
+                  PGDM from IIM Calcutta and B.Tech degree from IIT Kharagpur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-12 mb-5 mt-5">
+        <div class="card profile-card p-2">
+          <div class="row">
+            <div class="col-8">
+              <div class="card-body">
+                <h4 class="card-title text-left">Chief Engineer </h4>
+                <p class="card-text profile-card-text text-left">
+                    Solidity developer, M.Phil in Physics & a BSc. in Math. 
+                    He had deployed sophisticated mathematical methods & computational algorithms to resolve problem 
+                    in quantum physics but now he is more interested in applying them to the blockchain technology.
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+                <img class="card-img-top profile-img mx-auto img-fluid" src="assets/img/fanbing-pic.jpg" alt="">
+                <p class="mt-4" style="font-size: 1.5em;"> <a target="_blank" href="https://www.linkedin.com/in/fanbing-xia-169145139/"><span class="icon icon-linkedin"></span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<div id="contact" class="block block-inverse app-footer">
+ <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">Contact</h6></li>
+          <li class="text-muted">
+            info@koinbros.com
+          </li>
+          <li class="text-muted">
+            <a target="_blank" href="https://www.linkedin.com/company/koinbros/">Linkedin</a>
+          </li>
+          <li class="text-muted">
+              <a target="_blank" href="https://medium.com/cryptomover">Medium</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-9">
+          <h6 class="text-uppercase">Send us a Message</h6>
+          <form class="form">
+            <div class="form-group">
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+              <small id="helpId" class="text-muted">We will get back to you shortly.</small>
+            </div>
+          </form>
+          <button type="button" name="" id="" class="btn btn-dark" btn-lg btn-block">Send</button>
+        </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <p class="text-muted"> Rm 28, Cyberport 3, Core C, Level 3, I.T. Street 100 Cyberport Road, Hong Kong </p>
+        <p class="text-muted"> &copy; Koinbros LTD. 2018 </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    </script>
+</body>
+</html>
+
