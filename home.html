@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,21 +7,14 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-
     <title>
-      
-        StartUp &middot; 
-      
+      StartUp - 
     </title>
-
+    <link rel="icon" type="image/png" href="assets/img/KoinbrosFavicon.png" sizes="16x16">
     
-      <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
-      <link href="assets/css/toolkit-startup.css" rel="stylesheet">
-      <link href="assets/css/application-startup.css" rel="stylesheet">
-    
-
-    
-
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
+    <link href="assets/css/toolkit-startup.css" rel="stylesheet">
+    <link href="assets/css/application-startup.css" rel="stylesheet">
     <style>
       /* note: this is a hack for ios iframe for bootstrap themes shopify page */
       /* this chunk of css is not part of the toolkit :) */
@@ -44,12 +34,7 @@
       }
     </style>
   </head>
-
-
 <body>
-  
-
-
 
 <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
   <ul class="nav nav-bordered nav-stacked flex-column">
@@ -68,8 +53,19 @@
     <li class="nav-item">
       <a class="nav-link" href="#team">Team</a>
     </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Partners</a>
+        <a class="dropdown-item" href="#">Press</a>
+        <a class="dropdown-item" href="#">News page</a>
+        <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Careers</a>
+      </div>
+    </li>
     <li class="nav-item">
-      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link" href="#login">Login</a>
     </li>
   </ul>
 </div>
@@ -77,11 +73,11 @@
 <div class="stage" id="stage">
 
 <div class="block block-inverse block-fill-height app-header" style="background-color:white">
-
   <div class="container py-4 app-navbar">
     <nav class="navbar navbar-padded navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand mr-auto" href="">
-        <strong padding: 12px; border-radius: 4px; color: #28669F;">Koinbros.</strong>
+        <img class="header-logo" src="assets/img/KoinbrosLogo.png">
+      <!--  <strong style="padding: 12px; border-radius: 4px; color: #28669F;">Koinbros.</strong> -->
       </a>
       <button
         class="navbar-toggler"
@@ -94,28 +90,40 @@
 
       <div class="d-none d-md-block text-uppercase" style="color:black">
         <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#market-making">Market Making</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#OTC">OTC</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#team">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#market-making">Market Making</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#OTC">OTC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Partners</a>
+              <a class="dropdown-item" href="#">Press</a>
+              <a class="dropdown-item" href="#">News page</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Careers</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#login">Login</a>
+          </li>
         </ul>
       </div>
     </nav>
-</div>
+  </div>
 
   <img class="app-graph"  src="assets/img/startup-0.svg">
 
@@ -234,16 +242,16 @@
   <div class="container text-center">
     <div class="row">
         <div class="col-md-3 col-6">
-            <img style="max-width: 10em"  class="img-responsive" src="assets/img/binance-logo.svg">
+          <img style="max-width: 10em"  class="img-responsive" src="assets/img/binance-logo.svg">
         </div>
         <div class="col-md-3 col-6">
-            <img style="max-width: 10em"  class="img-responsive" src="assets/img/bitfinex_logo.svg">
+          <img style="max-width: 10em"  class="img-responsive" src="assets/img/bitfinex_logo.svg">
         </div>
         <div class="col-md-3 col-6">
-            <img style="max-width: 10em"  class="img-responsive" src="assets/img/coin-ex-logo.svg">
+          <img style="max-width: 10em"  class="img-responsive" src="assets/img/coin-ex-logo.svg">
         </div>
         <div class="col-md-3 col-6">
-            <img  style="max-width: 10em"  class="img-responsive" src="assets/img/idex_logo.svg">
+          <img  style="max-width: 10em"  class="img-responsive" src="assets/img/idex_logo.svg">
         </div>
     </div>
     <small style="color:white"> + All other major exchanges. </small>
@@ -304,6 +312,11 @@
 .icon-linkedin {
   color: #006cac;
 }
+.header-logo {
+  max-width: 37%;
+  height: auto;
+  margin-left: 10px;
+}
 </style>
 <div id="team" class="block block-secondary app-block-marketing-grid">
   <div class="container text-xs-center">
@@ -312,8 +325,8 @@
         <h2 class="mb-4 display-3">Team</h2>
       </div>
     </div>
-    <div class="row">
 
+    <div class="row">
       <div class="col-12 mb-5">
         <div class="card profile-card p-2">
           <div class="row">
@@ -341,7 +354,7 @@
               <div class="card-body">
                 <h4 class="card-title text-left">COO, Co-Founder</h4>
                 <p class="card-text profile-card-text text-left">
-                    Worked as a trader & quantitative analyst in a bulge bracket investment bank. 
+                    Worked as a trader &amp; quantitative analyst in a bulge bracket investment bank. 
                     He also worked as a data analyst for an analytics firm before joining the bank. 
                     B.Tech-M.Tech from IIT Kanpur.
                 </p>
@@ -359,15 +372,16 @@
       <div class="card profile-card p-2">
         <div class="row">
           <div class="col-4">
-              <img class="card-img-top profile-img mx-auto img-fluid" src="assets/img/pradosh-pic.jpeg" alt="">
-              <p class="mt-4" style="font-size: 1.5em;"> <a target="_blank" href="https://www.linkedin.com/in/pradoshbiswas/"><span class="icon icon-linkedin"></span></a></p>
+              <img class="card-img-top profile-img mx-auto img-fluid" src="assets/img/fanbing-pic.jpg" alt="">
+              <p class="mt-4" style="font-size: 1.5em;"> <a target="_blank" href="https://www.linkedin.com/in/fanbing-xia-169145139/"><span class="icon icon-linkedin"></span></a></p>
           </div>
           <div class="col-8">
             <div class="card-body">
-              <h4 class="card-title text-left">Chief Risk Officer</h4>
+              <h4 class="card-title text-left">Chief Engineer</h4>
               <p class="card-text profile-card-text text-left">
-                  8 yrs as an Asian equities trader/analyst and 4 years as an equity research associate . 
-                  PGDM from IIM Calcutta and B.Tech degree from IIT Kharagpur.
+                Solidity developer, M.Phil in Physics &amp; a BSc. in Math. 
+                He had deployed sophisticated mathematical methods &amp; computational algorithms to resolve problem 
+                in quantum physics but now he is more interested in applying them to the blockchain technology.
               </p>
             </div>
           </div>
@@ -379,24 +393,21 @@
           <div class="row">
             <div class="col-8">
               <div class="card-body">
-                <h4 class="card-title text-left">Chief Engineer </h4>
+                <h4 class="card-title text-left">Chief Risk Officer</h4>
                 <p class="card-text profile-card-text text-left">
-                    Solidity developer, M.Phil in Physics & a BSc. in Math. 
-                    He had deployed sophisticated mathematical methods & computational algorithms to resolve problem 
-                    in quantum physics but now he is more interested in applying them to the blockchain technology.
+                  8 yrs as an Asian equities trader/analyst and 4 years as an equity research associate . 
+                  PGDM from IIM Calcutta and B.Tech degree from IIT Kharagpur.
                 </p>
               </div>
             </div>
             <div class="col-4">
-                <img class="card-img-top profile-img mx-auto img-fluid" src="assets/img/fanbing-pic.jpg" alt="">
-                <p class="mt-4" style="font-size: 1.5em;"> <a target="_blank" href="https://www.linkedin.com/in/fanbing-xia-169145139/"><span class="icon icon-linkedin"></span></a></p>
+                <img class="card-img-top profile-img mx-auto img-fluid" src="assets/img/pradosh-pic.jpeg" alt="">
+                <p class="mt-4" style="font-size: 1.5em;"> <a target="_blank" href="https://www.linkedin.com/in/pradoshbiswas/"><span class="icon icon-linkedin"></span></a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
   </div>
 </div>
 
@@ -420,18 +431,21 @@
       </div>
       <div class="col-md-9">
           <h6 class="text-uppercase">Send us a Message</h6>
-          <form class="form">
+          <form class="form" action="mailto:admin@koinbros.com" method="GET">
             <div class="form-group">
-              <textarea class="form-control" aria-label="With textarea"></textarea>
-              <small id="helpId" class="text-muted">We will get back to you shortly.</small>
+              <label for="InputEmail1">Email address</label>
+              <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter your email"><br/>
+              <textarea class="form-control" aria-label="With textarea" placeholder="Enter you Message"></textarea>
+              <small id="helpId" class="text-muted">We will get back to you shortly.</small><br/><br/>
+              <input type="submit" name="Send" value="Send" class="btn btn-dark btn-lg btn-block">
             </div>
           </form>
-          <button type="button" name="" id="" class="btn btn-dark" btn-lg btn-block">Send</button>
+        <!--  <button type="button" name="" id="" class="btn btn-dark" btn-lg btn-block">Send</button>  -->
         </div>
     </div>
     <div class="row mt-5">
       <div class="col-12 text-center">
-        <p class="text-muted"> Rm 28, Cyberport 3, Core C, Level 3, I.T. Street 100 Cyberport Road, Hong Kong </p>
+        <p class="text-muted"> Cyberport 3, Core C, I.T. Street 100 Cyberport Road, Hong Kong </p>
         <p class="text-muted"> &copy; Koinbros LTD. 2018 </p>
       </div>
     </div>
@@ -451,4 +465,3 @@
     </script>
 </body>
 </html>
-
